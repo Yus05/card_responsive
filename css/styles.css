@@ -1,0 +1,150 @@
+/*
+  Color de fondo: hsl(185, 75%, 39%)
+  Color del texto gris: hsl(227, 10%, 46%)
+ */
+ :root{
+  --bg-color: #19a2ae;
+  --color: #6a6f8150; 
+  --color-dark: #6a6f81;
+ }
+
+ *{
+   margin: 0;
+  }
+
+  html{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+
+  *,
+  *::after,
+  *::before{
+    box-sizing: inherit;
+  }
+  /* 
+  -> Por herencia a todos lo elementos, a todos lo elementos que generemos con before y a todos los elementos que generemos con after. 
+  */
+
+  body{
+   background-color: var(--bg-color);
+   height: 100vh;
+   margin: 0;
+   overflow: hidden;
+  }
+
+ .absolute{
+  position: absolute;
+ }
+ .relative{
+  position: relative;
+ }
+
+ /* Dando medidas y ubicando los circulos: */
+ .circle{
+  max-width: 850px;
+  min-width: 450px;
+  width: 60%;
+ }
+
+ .top__circle{
+  top: -300px;
+  left: -150px;
+ }
+
+ .bottom__circle{
+  right: -150px;
+  bottom: -300px;
+ }
+
+ .circle__test{
+  max-width: 500px;
+  min-width: 200px;
+ }
+ 
+
+ /* CARD: */
+ /* Header: */
+
+ .card{
+  top: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  max-width: 450px;
+  min-width: 400px;
+  width: 50%;
+  border-radius: 4%;
+  overflow: inherit;
+  /* height: 400px; */
+ }
+
+ .card__pattern{
+  width: 100%;
+  height: auto;
+ }
+
+ .card__picture{
+  top: 25%;
+  left:38%;
+  width: 105px;
+  border-radius: 50%;
+ }
+
+ /* Main: */
+
+ .card__main{
+  margin-top: 20%;
+  text-align: center;
+ }
+
+ /* Footer: */
+
+ .card__footer{
+  border-top: solid .7px var(--color);
+  margin-top: 5%;
+ }
+
+ .footer__left,
+ .footer__center,
+ .footer__right{
+  display: inline-block;
+  width: 32%;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 8%;
+ }
+
+
+ /* Fuentes: */
+
+ .card__main > p{
+  font-size: 1.2rem;
+ }
+
+ .card__main span{
+  color: var(--color-dark);
+ }
+ 
+ .card__main p:last-child{
+  color: var(--color-dark);
+ }
+
+ .card__footer p:first-child{
+  font-size: 1.5rem;
+  padding-bottom: 7%;
+ }
+
+ .card__footer p:last-child{
+  font-size: 1.2rem;
+  color: var(--color-dark);
+ }
+
+
+
+
+
+
+
+
